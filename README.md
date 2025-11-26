@@ -177,10 +177,6 @@ This template is free to use and modify for your personal academic website. No a
 - [Font Awesome Icons](https://fontawesome.com/icons)
 - [CSS Color Picker](https://htmlcolorcodes.com/)
 
-## ✨ Credits
-
-Created with ❤️ for the academic community.
-
 ---
 
 **Good luck with your academic website!** 🎓
