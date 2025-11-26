@@ -1,0 +1,16 @@
+# GitHub Pages Configuration (Optional)
+# This file is optional but can be useful for Jekyll-based GitHub Pages
+
+# Site settings
+title: Dr. [Your Name] - Academic Website
+description: Academic website showcasing research, publications, and teaching
+author: [Your Name]
+
+# Build settings
+markdown: kramdown
+
+# Exclude these files from the build
+exclude:
+  - README.md
+  - .gitignore
+
