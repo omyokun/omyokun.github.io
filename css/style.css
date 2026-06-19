@@ -145,11 +145,19 @@ a:hover {
     opacity: 0.9;
 }
 
+.hero-text {
+    width: 100%;
+    text-align: center;
+}
+
 .social-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin: 1rem auto 0;
+    width: 100%;
 }
 
 .social-links a {
