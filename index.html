@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic Website - Research, Publications, and Teaching">
+    <meta name="description" content="Omar Naim - Postdoctoral Researcher in Computer Science and AI">
     <title>Omar Naim - Academic Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -13,7 +13,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">Omar Naim</div>
-            <button class="nav-toggle" id="navToggle">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-menu" id="navMenu">
@@ -21,6 +21,7 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#publications" class="nav-link">Publications</a></li>
                 <li><a href="#teaching" class="nav-link">Teaching</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
@@ -29,28 +30,27 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-          <div class="hero-content">
-            <div class="hero-image">
-              <img src="images/omar.jpg" alt="Omar Naim">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="images/omar.jpg" alt="Omar Naim">
+                </div>
+
+                <div class="hero-text">
+                    <h1>Omar Naim</h1>
+                    <h2>Postdoctoral Researcher</h2>
+                    <p class="hero-affiliation">IRIT | Toulouse, France</p>
+                    <p class="hero-affiliation">PhD in Computer Science | AI Researcher</p>
+
+                    <div class="social-links">
+                        <a href="mailto:omar.naim.docs@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://scholar.google.fr/citations?user=-VFcXe4AAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://github.com/omyokun" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/omar-naim/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-      
-            <div class="hero-text">
-              <h1>Omar Naim</h1>
-              <h2>PhD Student</h2>
-              <p class="hero-affiliation">ANITI, IRIT | University of Toulouse, France</p>
-      
-              <div class="social-links">
-                <a href="mailto:omar.naim.docs@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://scholar.google.fr/citations?user=-VFcXe4AAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://github.com/omyokun" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/omar-naim/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              </div>
-      
-            </div>
-          </div>
         </div>
-      </section>
-      
+    </section>
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -58,206 +58,177 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <p>
-                    Welcome! I am a Ph.D. student in the Computer Science Department at the 
-                    <a href="https://www.univ-toulouse.fr/" target="_blank">University of Toulouse</a>, France. 
-                    I am supervised by 
-                    <a href="https://scholar.google.com/citations?user=yQ5Th-sAAAAJ&hl=en&oi=ao" target="_blank">Nicholas Asher</a>. 
-                    My research focuses on understanding the limits of Large Language Models, with a particular emphasis on 
-                    in-context learning (ICL). Based on these findings, I have also worked on multi-agent systems and on 
-                    efficient pruning techniques for LLMs used in agentic settings. 
-                    I maintain a strong interest in core Machine Learning and Mathematics. 
+                    Welcome! I am a postdoctoral researcher at
+                    <a href="https://www.irit.fr/" target="_blank" rel="noopener noreferrer">IRIT</a> in Toulouse, France,
+                    working in artificial intelligence with a focus on transformer architectures, in-context learning,
+                    interpretability, pruning, and model efficiency. My research combines theoretical analysis of
+                    transformer limitations with practical methods for improving performance and efficiency, including
+                    new attention mechanisms, task-aware layer pruning, and multi-agent systems.
                 </p>
-            
+
                 <p>
-                    Prior to joining the University of Toulouse, I completed the <i>Classes Préparatoires</i> at 
-                    <a href="https://lm6e.ma" target="_blank">Lycée Mohammed VI d’Excellence</a> in Benguérir 
-                    (CPGE MPSI/MP*). I then joined 
-                    <a href="https://www.enseeiht.fr/" target="_blank">ENSEEIHT</a> in Toulouse, where I obtained an 
-                    engineering degree in Computer Science with a specialization in High-Performance Computing 
-                    and Big Data. During my engineering studies, I developed strong foundations in  
-                    optimization, machine learning, statistics, numerical methods, and large-scale data processing.
+                    I completed my PhD in Computer Science at the
+                    <a href="https://www.univ-toulouse.fr/" target="_blank" rel="noopener noreferrer">University of Toulouse</a>,
+                    defended on 24 March 2026, under the supervision of
+                    <a href="https://scholar.google.com/citations?user=yQ5Th-sAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Nicholas Asher</a>
+                    and
+                    <a href="https://www.irit.fr/~Serge.Gratton/" target="_blank" rel="noopener noreferrer">Serge Gratton</a>.
+                    During my PhD, I studied the limits of in-context learning and transformer generalization, trained
+                    transformers from scratch, fine-tuned models on downstream tasks, and evaluated model behavior
+                    through empirical and mathematical analysis.
+                </p>
+
+                <p>
+                    Before my PhD, I completed the <i>Classes Préparatoires</i> at
+                    <a href="https://www.lm6e.ma/" target="_blank" rel="noopener noreferrer">Lycée Mohammed VI d’Excellence</a>
+                    in Benguerir, Morocco, and obtained an engineering degree in Computer Science from
+                    <a href="https://www.enseeiht.fr/" target="_blank" rel="noopener noreferrer">ENSEEIHT</a>,
+                    specializing in High-Performance Computing and Big Data.
                 </p>
             </div>
-            
-            
-            
+
             <div class="highlight-item">
                 <i class="fas fa-graduation-cap"></i>
                 <h3>Education</h3>
                 <ul>
-            
                     <li>
-                        <strong>Ph.D. Student</strong> in Computer Science – 
-                        <a href="https://www.univ-toulouse.fr/" target="_blank">University of Toulouse</a> / 
-                        <a href="https://www.irit.fr/" target="_blank">IRIT</a> / 
-                        <a href="https://aniti.univ-toulouse.fr/" target="_blank">ANITI</a>
-                        <span>2023 – Present</span>
+                        <strong>PhD in Computer Science</strong> –
+                        <a href="https://www.univ-toulouse.fr/" target="_blank" rel="noopener noreferrer">University of Toulouse</a>, France
+                        <span>2023 – 2026</span>
+                        <br>Defended on 24 March 2026. Supervisors: Nicholas Asher and Serge Gratton.
                     </li>
-            
                     <li>
-                        <strong>Engineering Degree</strong> in Computer Science: HPC & Big Data – 
-                        <a href="https://www.enseeiht.fr/" target="_blank">ENSEEIHT </a>
+                        <strong>Engineering Degree</strong> in Computer Science: HPC &amp; Big Data –
+                        <a href="https://www.enseeiht.fr/" target="_blank" rel="noopener noreferrer">ENSEEIHT</a>, Toulouse, France
                         <span>2019 – 2022</span>
                     </li>
-            
                     <li>
-                        <strong>CPGE</strong> MPSI / MP* – 
-                        <a href="https://www.lm6e.ma/" target="_blank">Lycée Mohammed VI d’Excellence</a>
+                        <strong>Preparatory Classes</strong> MPSI / MP* –
+                        <a href="https://www.lm6e.ma/" target="_blank" rel="noopener noreferrer">Lycée Mohammed VI d’Excellence</a>, Benguerir, Morocco
                         <span>2017 – 2019</span>
                     </li>
-            
                 </ul>
             </div>
-            
+
             <div class="highlight-item">
                 <i class="fas fa-briefcase"></i>
-                <h3>Experience</h3>
+                <h3>Research Experience</h3>
                 <ul>
-            
                     <li>
-                        <strong>Ph.D. Student</strong> – 
-                        <a href="https://www.irit.fr/" target="_blank">IRIT</a> 
-                        (Institut de Recherche en Informatique de Toulouse), 
-                        <a href="https://aniti.univ-toulouse.fr/" target="_blank">ANITI</a>
-                        <span>2023 – Present</span>
+                        <strong>Postdoctoral Researcher</strong> –
+                        <a href="https://www.irit.fr/" target="_blank" rel="noopener noreferrer">IRIT</a>, Toulouse, France
+                        <span>May 2026 – Present</span>
+                        <br>Research on transformer architectures, in-context learning, interpretability, pruning, attention mechanisms, and model efficiency.
                     </li>
-            
                     <li>
-                        <strong>Data Scientist</strong> – 
-                        <a href="https://www.airbus.com/" target="_blank">Airbus</a>  
+                        <strong>PhD Researcher</strong> –
+                        <a href="https://www.irit.fr/" target="_blank" rel="noopener noreferrer">IRIT</a> /
+                        <a href="https://aniti.univ-toulouse.fr/" target="_blank" rel="noopener noreferrer">ANITI</a>, University of Toulouse
+                        <span>2023 – 2026</span>
+                        <br>Developed work on SSA attention scoring, TALE task-aware layer pruning, COCORELI multi-agent systems, and explainability methods for attention matrices.
+                    </li>
+                    <li>
+                        <strong>Data Scientist Intern</strong> –
+                        <a href="https://www.airbus.com/" target="_blank" rel="noopener noreferrer">Airbus</a>, Toulouse, France
                         <span>2022</span>
+                        <br>Worked on applied research, statistical analysis, data processing pipelines, and predictive methods for the A350 aircraft program.
                     </li>
-            
                     <li>
-                        <strong>Research Intern</strong> – 
-                        <a href="https://www.kuas.ac.jp/en/" target="_blank">Kyoto University of Advanced Science</a>  
-                        <span> 2021</span>
+                        <strong>Research Intern</strong> –
+                        <a href="https://www.kuas.ac.jp/en/" target="_blank" rel="noopener noreferrer">Kyoto University of Advanced Science</a>, Kyoto, Japan
+                        <span>2021</span>
+                        <br>Studied dataset shift in sleep stage classification using wearable sensor data and machine learning models for physiological time series.
                     </li>
-            
                 </ul>
-            </div>
-            
-            
-            
-            
             </div>
         </div>
     </section>
 
-    
     <!-- Publications Section -->
-    <section id="publications" class="section">
+    <section id="publications" class="section section-alt">
         <div class="container">
             <h2 class="section-title">Selected Publications</h2>
             <p class="section-intro">
-                For a complete list of publications, please visit my 
-                <a href="https://scholar.google.com/citations?user=-VFcXe4AAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
+                For a complete list of publications, please visit my
+                <a href="https://scholar.google.com/citations?user=-VFcXe4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar profile</a>.
             </p>
-            
+
             <div class="publications-list">
-                
-                <!-- 2025 Publications -->
                 <div class="publication-year">
-                    <h3>2025</h3>
+                    <h3>Selected First-Author Publications</h3>
                     <div class="publication-items">
                         <div class="publication-item">
-                            <p class="pub-authors">
-                                <strong>Omar Naim</strong>, Jérôme Bolte, Nicholas Asher
-                            </p>
-                            <p class="pub-title">
-                                "Analyzing limits for in-context learning"
-                            </p>
-                            <p class="pub-venue">
-                                <em>39th Conference on Neural Information Processing Systems (NeurIPS 2025) @ WCTD</em>, 2025
-                            </p>
+                            <p class="pub-authors"><strong>Omar Naim</strong>, Swarnadeep Bhar, Jérôme Bolte, Nicholas Asher</p>
+                            <p class="pub-title">"SSA: Improving Performance with a Better Scoring Function"</p>
+                            <p class="pub-venue"><em>ACL 2026 Main Conference</em>, 2026</p>
                             <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2502.03503" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                                <a href="https://arxiv.org/abs/2508.14685" class="pub-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> arXiv</a>
                             </div>
                         </div>
 
                         <div class="publication-item">
-                            <p class="pub-authors">
-                                <strong>Omar Naim</strong>, Guilhem Fouilhé, Nicholas Asher
-                            </p>
-                            <p class="pub-title">
-                                "Re-examining learning linear functions in context"
-                            </p>
-                            <p class="pub-venue">
-                                <em>KI 2025: Advances in Artificial Intelligence</em>, 2025
-                            </p>
+                            <p class="pub-authors"><strong>Omar Naim</strong>, Krish Sharma, Nicholas Asher</p>
+                            <p class="pub-title">"TELL-TALE: Task-Efficient LLMs with Task-Aware Layer Elimination"</p>
+                            <p class="pub-venue"><em>ACL 2026 Findings</em>, 2026</p>
                             <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2411.11465" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
-                            </div>
-                        </div>
-                        
-                        <div class="publication-item">
-                            <p class="pub-authors">
-                                <strong>Omar Naim</strong>, Swarnadeep Bhar, Jérôme Bolte, Nicholas Asher
-                            </p>
-                            <p class="pub-title">
-                                "Scaled Signed Averaging Improves In-Context and Early Learning Benchmark Performance in Small Transformers"
-                            </p>
-                            <p class="pub-venue">
-                                <em>Preprint</em>, 2025
-                            </p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2508.14685" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        <div class="publication-item">
-                            <p class="pub-authors">
-                                <strong>Omar Naim</strong>, Krish Sharma, Nicholas Asher
-                            </p>
-                            <p class="pub-title">
-                                "TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination"
-                            </p>
-                            <p class="pub-venue">
-                                <em>Preprint</em>, 2025
-                            </p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2510.22767" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                                <a href="https://arxiv.org/abs/2510.22767" class="pub-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> arXiv</a>
                             </div>
                         </div>
 
-
-                        
                         <div class="publication-item">
-                            <p class="pub-authors">
-                                Swarnadeep Bhar, <strong>Omar Naim</strong>, Eleni Metheniti, Bastien Navarri, Loïc Cabannes, Morteza Ezzabady, Nicholas Asher
-                            </p>
-                            <p class="pub-title">
-                                "Cooperative, Compositional Reconstitution & Execution of Language Instructions"
-                            </p>
-                            <p class="pub-venue">
-                                <em>Preprint</em>, 2025
-                            </p>
+                            <p class="pub-authors"><strong>Omar Naim</strong>, Nicholas Asher</p>
+                            <p class="pub-title">"On Explaining with Attention Matrices"</p>
+                            <p class="pub-venue"><em>ECAI 2024: 27th European Conference on Artificial Intelligence</em>, 2024</p>
                             <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2509.04470" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
+                                <a href="https://arxiv.org/abs/2410.18541" class="pub-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> arXiv</a>
                             </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- 2024 Publications -->
+
                 <div class="publication-year">
-                    <h3>2024</h3>
+                    <h3>Additional Publications</h3>
                     <div class="publication-items">
                         <div class="publication-item">
-                            <p class="pub-authors">
-                                <strong>Omar Naim</strong>, Nicholas Asher
-                            </p>
-                            <p class="pub-title">
-                                "On explaining with attention matrices"
-                            </p>
-                            <p class="pub-venue">
-                                <em>ECAI 2024: 27th European Conference on Artificial Intelligence</em>, 2024
-                            </p>
+                            <p class="pub-authors">Swarnadeep Bhar, <strong>Omar Naim</strong>, Eleni Metheniti, Bastien Navarri, Loïc Cabannes, Morteza Ezzabady, Nicholas Asher</p>
+                            <p class="pub-title">"COCORELI: Enforcing Execution Preconditions for Reliable Collaborative Instruction Following"</p>
+                            <p class="pub-venue"><em>SIGDIAL 2026</em>, 2026</p>
                             <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2410.18541" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
-                    
+                                <a href="https://arxiv.org/abs/2509.04470" class="pub-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> arXiv</a>
                             </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <p class="pub-authors"><strong>Omar Naim</strong>, Jérôme Bolte, Nicholas Asher</p>
+                            <p class="pub-title">"Analyzing Limits for In-Context Learning"</p>
+                            <p class="pub-venue"><em>NeurIPS 2025 @ WCTD</em>, 2025</p>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2502.03503" class="pub-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> arXiv</a>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <p class="pub-authors"><strong>Omar Naim</strong>, Guilhem Fouilhé, Nicholas Asher</p>
+                            <p class="pub-title">"Re-examining Learning Linear Functions in Context"</p>
+                            <p class="pub-venue"><em>KI 2025: Advances in Artificial Intelligence</em>, 2025</p>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2411.11465" class="pub-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> arXiv</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-year">
+                    <h3>Under Review</h3>
+                    <div class="publication-items">
+                        <div class="publication-item">
+                            <p class="pub-title">"Why Transformers Struggle with Distribution-Independent In-Context Learning"</p>
+                        </div>
+                        <div class="publication-item">
+                            <p class="pub-title">"TAPIOCA: Why Task-Aware Pruning Improves OOD Model Capability"</p>
+                        </div>
+                        <div class="publication-item">
+                            <p class="pub-title">"Rethinking Generalization in NLP: A Kripkean Challenge to Meaning-as-Use in LLMs"</p>
                         </div>
                     </div>
                 </div>
@@ -266,74 +237,100 @@
     </section>
 
     <!-- Teaching Section -->
-    <section id="teaching" class="section section-alt">
+    <section id="teaching" class="section">
         <div class="container">
-            
-            <section id="teaching" class="section section-alt">
-                <div class="container">
-                    <h2 class="section-title">Teaching</h2>
-                    <p class="section-intro">
-                        I am passionate about teaching and mentoring students across multiple mathematical and computer science subjects.
-                        Below are the courses I have taught at ENSEEIHT and the University of Toulouse.
-                    </p>
-                    
-                    <div class="teaching-grid">
-            
-                        <div class="course-item">
-                            <h3>Optimisation — ENSEEIHT</h3>
-                            <p>An introduction to continuous optimization, including gradient-based methods, convexity,
-                               and numerical approaches to solving optimization problems.</p>
-                            <p class="course-semester"><i class="fas fa-calendar"></i> 2023–2024</p>
-                        </div>
-            
-                        <div class="course-item">
-                            <h3>Optimisation Numérique — ENSEEIHT</h3>
-                            <p>Advanced numerical optimization techniques including quasi-Newton methods,
-                               constrained optimization, and algorithmic implementation.</p>
-                            <p class="course-semester"><i class="fas fa-calendar"></i> 2023–2024</p>
-                        </div>
-            
-                        <div class="course-item">
-                            <h3>Probabilité — ENSEEIHT</h3>
-                            <p>A rigorous course covering probability spaces, random variables, expectation,
-                               limit theorems, and foundations of stochastic modelling.</p>
-                            <p class="course-semester"><i class="fas fa-calendar"></i> 2023–2024</p>
-                        </div>
-            
-                        <div class="course-item">
-                            <h3>Statistics — ENSEEIHT</h3>
-                            <p>Classical and modern statistical analysis, covering estimation, hypothesis testing,
-                               regression methods, and practical data analysis.</p>
-                            <p class="course-semester"><i class="fas fa-calendar"></i> 2023–2024</p>
-                        </div>
-            
-                        <div class="course-item">
-                            <h3>Analyse Hilbertienne — ENSEEIHT</h3>
-                            <p>A functional analysis course focusing on Hilbert spaces, orthogonality,
-                               projections, spectral theory, and applications to PDEs and optimization.</p>
-                            <p class="course-semester"><i class="fas fa-calendar"></i> 2024–2025</p>
-                        </div>
-            
-                        <div class="course-item">
-                            <h3>Intelligence Artificielle — University of Toulouse</h3>
-                            <p>Foundational concepts of AI including search algorithms, logic-based agents,
-                               machine learning basics, and practical reasoning systems.</p>
-                            <p class="course-semester"><i class="fas fa-calendar"></i> 2024–2025</p>
-                        </div>
-            
-                        <div class="course-item">
-                            <h3>Séries Mathématiques — University of Toulouse</h3>
-                            <p>A preparatory-level course on mathematical series, convergence analysis,
-                               power series, and applications in modeling and numerical computation.</p>
-                            <p class="course-semester"><i class="fas fa-calendar"></i> 2024–2025</p>
-                        </div>
-            
-                    </div>
+            <h2 class="section-title">Teaching &amp; Mentoring</h2>
+            <p class="section-intro">
+                From 2023 to 2026, I delivered tutorials and practical labs to engineering and master’s students at
+                ENSEEIHT and the University of Toulouse across mathematics, optimization, statistics, and artificial intelligence.
+            </p>
+
+            <div class="teaching-grid">
+                <div class="course-item">
+                    <h3>Optimization — ENSEEIHT</h3>
+                    <p>Continuous optimization, gradient-based methods, convexity, and numerical approaches to optimization problems.</p>
+                    <p class="course-semester"><i class="fas fa-calendar"></i> 2023–2024</p>
                 </div>
-            </section>
-            
-            
-          
+
+                <div class="course-item">
+                    <h3>Numerical Optimization — ENSEEIHT</h3>
+                    <p>Quasi-Newton methods, constrained optimization, and algorithmic implementation.</p>
+                    <p class="course-semester"><i class="fas fa-calendar"></i> 2023–2024</p>
+                </div>
+
+                <div class="course-item">
+                    <h3>Probability — ENSEEIHT</h3>
+                    <p>Probability spaces, random variables, expectation, limit theorems, and stochastic modelling foundations.</p>
+                    <p class="course-semester"><i class="fas fa-calendar"></i> 2023–2024</p>
+                </div>
+
+                <div class="course-item">
+                    <h3>Statistics — ENSEEIHT</h3>
+                    <p>Estimation, hypothesis testing, regression methods, and practical data analysis.</p>
+                    <p class="course-semester"><i class="fas fa-calendar"></i> 2023–2024</p>
+                </div>
+
+                <div class="course-item">
+                    <h3>Functional Analysis — ENSEEIHT</h3>
+                    <p>Hilbert spaces, orthogonality, projections, spectral theory, and applications to PDEs and optimization.</p>
+                    <p class="course-semester"><i class="fas fa-calendar"></i> 2024–2025</p>
+                </div>
+
+                <div class="course-item">
+                    <h3>Artificial Intelligence — University of Toulouse</h3>
+                    <p>Search algorithms, logic-based agents, machine learning foundations, and practical reasoning systems.</p>
+                    <p class="course-semester"><i class="fas fa-calendar"></i> 2024–2025</p>
+                </div>
+
+                <div class="course-item">
+                    <h3>Infinite Series — University of Toulouse</h3>
+                    <p>Mathematical series, convergence analysis, power series, and applications in modelling and numerical computation.</p>
+                    <p class="course-semester"><i class="fas fa-calendar"></i> 2024–2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Skills, Training &amp; Service</h2>
+
+            <div class="highlight-item">
+                <i class="fas fa-brain"></i>
+                <h3>Machine Learning</h3>
+                <p>Transformers, LLMs, training from scratch, fine-tuning, in-context learning, interpretability, pruning, model efficiency, and multi-agent systems.</p>
+            </div>
+
+            <div class="highlight-item">
+                <i class="fas fa-square-root-alt"></i>
+                <h3>Mathematics</h3>
+                <p>Optimization, numerical optimization, linear algebra, probability, statistics, and functional analysis.</p>
+            </div>
+
+            <div class="highlight-item">
+                <i class="fas fa-code"></i>
+                <h3>Programming &amp; Tools</h3>
+                <p>Python, R, Julia, MATLAB, C, Java, Ada, OCaml, PyTorch, Hugging Face Transformers, CUDA, Weights &amp; Biases, cluster computing, experiment pipelines, and data processing.</p>
+            </div>
+
+            <div class="highlight-item">
+                <i class="fas fa-certificate"></i>
+                <h3>Advanced Training</h3>
+                <ul>
+                    <li>12th International School on Deep Learning (DeepLearn 2025), Porto–Maia, Portugal <span>2025</span></li>
+                    <li>14th Lisbon Machine Learning School (LxMLS 2024), Lisbon, Portugal <span>2024</span></li>
+                </ul>
+            </div>
+
+            <div class="highlight-item">
+                <i class="fas fa-users"></i>
+                <h3>Academic Service</h3>
+                <p>Reviewer for the NeurIPS Main Conference.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
@@ -344,19 +341,34 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p><a href="mailto:omar.naim@irit.fr">omar.naim@irit.fr</a></p>
+                            <p><a href="mailto:omar.naim.docs@gmail.com">omar.naim.docs@gmail.com</a></p>
                         </div>
                     </div>
-                    
+
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Website</h4>
+                            <p><a href="https://omyokun.github.io" target="_blank" rel="noopener noreferrer">omyokun.github.io</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Toulouse, France</p>
+                        </div>
+                    </div>
+
                     <div class="contact-item">
                         <i class="fas fa-building"></i>
                         <div>
-                            <h4> 3 Rue Tarfaya Toulouse, France</h4>
-                            <p>B612</p>
+                            <h4>Office</h4>
+                            <p>3 Rue Tarfaya, B612, Toulouse, France</p>
                         </div>
                     </div>
-                    
-                   
+                </div>
             </div>
         </div>
     </section>
@@ -364,12 +376,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-
-            <p>Last updated: <span id="lastUpdated">November 2025</span></p>
+            <p>Last updated: <span id="lastUpdated">June 2026</span></p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
 </html>
-
