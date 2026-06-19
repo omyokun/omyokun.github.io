@@ -6,11 +6,11 @@
 }
 
 :root {
-    /* Balanced Green–Mint Theme (with Elegant Green link colors) */
+    /* Balanced Green–Mint Theme */
 
-    --primary-color: #2c705a;      /* Rich green-teal */
-    --secondary-color: #43a047;    /* Vibrant Medium Green (Elegant Green link color) */
-    --accent-color: #66bb6a;       /* Soft Pastel Green (Elegant Green hover color) */
+    --primary-color: #2c705a;
+    --secondary-color: #43a047;
+    --accent-color: #66bb6a;
 
     --text-color: #2e3d39;
     --light-bg: #e8f7f1;
@@ -23,7 +23,6 @@
     --box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     --transition: all 0.3s ease;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -111,11 +110,17 @@ a:hover {
     text-align: center;
 }
 
+.hero .container {
+    text-align: center;
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
+    width: 100%;
 }
 
 .hero-image img {
@@ -125,6 +130,11 @@ a:hover {
     border: 5px solid var(--white);
     box-shadow: var(--box-shadow);
     object-fit: cover;
+}
+
+.hero-text {
+    width: 100%;
+    text-align: center;
 }
 
 .hero-text h1 {
@@ -145,22 +155,20 @@ a:hover {
     opacity: 0.9;
 }
 
-.hero-text {
-    width: 100%;
-    text-align: center;
-}
-
-.social-links {
+/* Hero Social Links */
+.hero .social-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     font-size: 1.5rem;
-    margin: 1rem auto 0;
-    width: 100%;
+    width: max-content;
+    max-width: 100%;
+    margin: 1.5rem auto 0 auto;
+    padding: 0;
 }
 
-.social-links a {
+.hero .social-links a {
     color: var(--white);
     width: 50px;
     height: 50px;
@@ -172,7 +180,7 @@ a:hover {
     transition: var(--transition);
 }
 
-.social-links a:hover {
+.hero .social-links a:hover {
     background-color: var(--white);
     color: var(--secondary-color);
     transform: translateY(-3px);
@@ -489,7 +497,7 @@ a:hover {
     .nav-toggle {
         display: block;
     }
-    
+
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -501,47 +509,47 @@ a:hover {
         padding: 1rem 0;
         display: none;
     }
-    
+
     .nav-menu.active {
         display: flex;
     }
-    
+
     .nav-link {
         padding: 1rem 2rem;
     }
-    
+
     .hero-text h1 {
         font-size: 2rem;
     }
-    
+
     .hero-text h2 {
         font-size: 1.2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .highlights {
         grid-template-columns: 1fr;
     }
-    
+
     .research-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .teaching-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
     }
-    
+
     .hero {
         padding: 3rem 0;
     }
-    
+
     .section {
         padding: 3rem 0;
     }
@@ -552,11 +560,14 @@ a:hover {
         width: 200px;
         height: 200px;
     }
-    
-    .social-links a {
+
+    .hero .social-links {
+        gap: 0.8rem;
+    }
+
+    .hero .social-links a {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
     }
 }
-
